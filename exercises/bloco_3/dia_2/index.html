@@ -2,32 +2,53 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-    <title>HTML</title>
+    <title>HTML - Exercícios 3.2<</title>
     <style>
         h1{
             width: 65px; 
             color: orange;
+            font-family: sans-serif;
+            text-decoration: underline;
         }
         #lista{
             background-color: peru;
+            line-height: 50px;
         }
         .bg{
             background-color: rosybrown;
         }
+        p{
+            font-weight: 600;
+            font-size: 3em;
+        }
+        body{
+            font-size: 16px;
+        }
+        #fonte{
+            font-style: oblique;
+            text-align: center;
+            
+        }
+        #amarelo{
+            background-color: yellow;
+        }
+        #red{
+            background-color: red;
+        }
+        #marrom{
+            background-color: brown;
+        }
+        
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    <p class="bg">Qual é a sua cor favorita?</p>
+    <p class="bg" id="fonte">Qual é a sua cor favorita?</p>
     <ul id="lista" class="bg">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="amarelo">Amarelo</li>
+      <li id="red">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
 
-    <!-- Exercícios
-          3 - Modifique a cor de fundo da lista não ordenada
-     4 - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo
-    -->
   </body>
 </html>
