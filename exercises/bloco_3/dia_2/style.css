@@ -1,0 +1,34 @@
+h1{
+    width: 65px; 
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+#lista{
+    background-color: peru;
+    line-height: 50px;
+}
+.bg{
+    background-color: rosybrown;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+body{
+    font-size: 16px;
+}
+#fonte{
+    font-style: oblique;
+    text-align: center;
+    
+}
+#amarelo{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
