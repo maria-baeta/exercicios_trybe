@@ -29,5 +29,16 @@ ol li:nth-child(2n-2){
 .primos{
   text-transform:uppercase
 }
+h1{
+  
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-style: solid;
+}
+
+h1,h3{
+  color:red;
+}
 
 
