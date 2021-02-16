@@ -67,7 +67,7 @@ div:nth-child(7){
    
 }
 
-
+/*
 ul{
     list-style-type: none;
     display: flex;
@@ -98,6 +98,9 @@ li:nth-child(3){
     border-radius: 100%;
     margin: 5px;
 }
+ul:nth-of-type(2)>li{
+    background-color: orange;
+}
 li:nth-of-type(4){
     width: 70px;
     height: 70px;
@@ -119,3 +122,4 @@ li:nth-of-type(6){
     border-radius: 100%;
     margin: 5px;
     }
+*/
