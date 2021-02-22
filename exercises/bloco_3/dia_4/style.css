@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     width: 200px;
     display:block;
-    margin-left: 400px;
+    margin-left: 500px;
   }
 
   .second {
@@ -18,7 +18,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    margin-left: 200px;
+    margin-left: 300px;
+    display: inline-block;
   }
 
   .third {
@@ -27,15 +28,16 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
   }
   li{
-      display: inline-block;
-    
+    display: inline;
   }
   h3{
-      text-align: center;
+    text-align: center;
   }
-  p{
-      text-align: center;
+  .alinhamento{
+      margin-left: 300px;
   }
+
   
