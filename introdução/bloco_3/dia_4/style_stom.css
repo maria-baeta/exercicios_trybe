@@ -1,10 +1,30 @@
 body{
-    margin: 0;
-    padding: 5px;
+    margin: 0px;
+    padding-left: 0px;
     background: white;
     font-family: Helvetica, Arial, sans-serif;
     color: black;
 }
+.custom-header{
+    margin: 0;
+    background-color: #fafafa;
+    height:100px;
+    padding-top: 2px;
+    padding-left: 50px;
+}
+h1{
+   letter-spacing: 3px;
+   line-height:0px;
+   color:#222;
+   font-size: 35px;
+   
+}
+.custom-subtitulo{
+    color: grey;
+    font-weight: 500;
+    letter-spacing:1px;
+}
+
 .navigation li{
     display: inline-block;
     margin-left: 20px;
