@@ -1,0 +1,7 @@
+.navigation li{
+    display: inline-block;
+    margin-left: 20px;
+   }
+span{
+    font-style: italic;
+}
