@@ -28,8 +28,15 @@
 //let carros= ["Saab", "Volvo", "BMW"];
 //for (let i = 0; i < carros.length; i++) {
   //  console.log(carros[i])}
-  let groceryList = ["Arroz", "Feijão", "Alface", "Melancia"];
+ // let groceryList = ["Arroz", "Feijão", "Alface", "Melancia"];
 
-  for (let index = 0; index < groceryList.length; index++){
-      console.log(groceryList[index])
+ // for (let index = 0; index < groceryList.length; index++){
+ //     console.log(groceryList[index])
+//}
+
+let vetor = [5,3, 2, 4, 7, 1, 0, 6]
+console.log(vetor)
+for (i = 0; i < vetor; i++){
+  let ordenacao = vetor[1];
+  if (ordenacao.sort)
 }
