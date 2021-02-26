@@ -26,3 +26,39 @@ console.log(mediaArit)
 if (mediaArit > 20) {
     console.log('Valor maior que 20')
 } else { console.log('Valor menor ou igual a 20')}
+
+//5.Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maiorNumero = 0;
+for (let index = 0; index < numbers.length; index++){
+    if(numbers[index] > maiorNumero) {
+        maiorNumero = numbers[index]
+    }
+}
+console.log(maiorNumero)
+
+//6.Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numerosImpares = 0;
+for(let index = 0; index < numbers.length; index++) {
+    if(numbers[1] % 2 !== 0) {
+        numerosImpares += 1;
+    }
+}
+if (numerosImpares === 0) {
+    console.log('Nenhum valor é impar encotrado')
+} else {
+    console.log(numerosImpares)
+}
+
+//7.Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menorNumero = 1000;
+for (let index = 0; index < numbers.length; index++){
+    if(numbers[index] < menorNumero) {
+        menorNumero = numbers[index]
+    }
+}
+console.log(menorNumero)
