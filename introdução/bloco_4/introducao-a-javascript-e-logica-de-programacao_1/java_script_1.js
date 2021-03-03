@@ -3,6 +3,12 @@ let a = 10;
 let b = 5;
 
 //Adição
+
+function soma (a, b) {
+    return a + b;
+}
+console.log(soma(5, 20));
+
 let adicao = a+b;
 console.log(adicao);
 
