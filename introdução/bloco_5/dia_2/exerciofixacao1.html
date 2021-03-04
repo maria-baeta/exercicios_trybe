@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    div{
+      border: 1px solid black;
+      margin: 50px;
+    }
+  </style>
 </head>
 <body>
     <div id="paiDoPai">
@@ -20,6 +26,31 @@
       <div id="quartoEUltimoFilho"></div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script>
+
+document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = 'green';
+document.querySelector('#elementoOndeVoceEsta').firstChild.innerHtml = 'Olá';
+document.querySelector('#pai').firstChild;
+document.querySelector('#elementoOndeVoceEsta').previousElementSibling
+document.querySelector('#elementoOndeVoceEsta').nextSibling
+document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+document.querySelector('#pai').childNodes[5]
+//Segunda parte do exercicio
+
+let chamaOPai = document.querySelector("#pai");
+let minhaDiv = document.createElement("div");
+chamaOPai.appendChild(minhaDiv);
+
+let chamoOndeVoceEsta = document.querySelector("#elementoOndeVoceEsta");
+let minhaDivFilha = document.createElement("div")
+chamoOndeVoceEsta.appendChild(minhaDivFilha)
+
+let chamaOPrimeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
+let minhaDivFilhaDaFilha = document.createElement("div");
+chamaOPrimeiroFilhoDoFilho.appendChild(minhaDivFilhaDaFilha);
+document.querySelector("#primeiroFilhoDoFilho").firstElementChild.className = "divCriadaPelaMaria"
+document.querySelector(".divCriadaPelaMaria").parentNode.parentNode.nextElementSibling;
+
+</script>
 </body>
 </html>
