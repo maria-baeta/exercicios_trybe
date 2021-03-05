@@ -105,19 +105,25 @@
   createUl.className = "list"
   addUl.appendChild(createUl);
   const itemLista = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
-  console.log(itemLista)
-  
   let listNumber = document.querySelector(".list")
   for(index=0; index < itemLista.length; index += 1) {
     let nameNumber = itemLista[index];
     let createLi = document.createElement('li')
     createLi.innerText = nameNumber;
     listNumber.appendChild(createLi)
-
-   
   }
 
-  //Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+  //9.Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+  let addH3um = document.querySelector(".main-content");
+  let createH3um = document.createElement("h3");
+  addH3um.appendChild(createH3um);
+  let addH3dois = document.querySelector(".main-content");
+  let createH3dois = document.createElement("h3");
+  addH3dois.appendChild(createH3dois);
+  let addH3tres = document.querySelector(".main-content");
+  let createH3tres = document.createElement("h3");
+  addH3tres.appendChild(createH3tres);
+  
     </script>
   </body>
 </html>
