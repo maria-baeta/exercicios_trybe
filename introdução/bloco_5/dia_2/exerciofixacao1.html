@@ -13,7 +13,7 @@
   </style>
 </head>
 <body>
-    <div id="paiDoPai">
+    <div id="paiDoPai" >
     <div id="pai">
       <div id="primeiroFilho"></div>
       <div id="elementoOndeVoceEsta">
@@ -35,6 +35,7 @@ document.querySelector('#elementoOndeVoceEsta').previousElementSibling
 document.querySelector('#elementoOndeVoceEsta').nextSibling
 document.querySelector('#elementoOndeVoceEsta').nextElementSibling
 document.querySelector('#pai').childNodes[5]
+
 //Segunda parte do exercicio
 
 let chamaOPai = document.querySelector("#pai");
@@ -50,6 +51,19 @@ let minhaDivFilhaDaFilha = document.createElement("div");
 chamaOPrimeiroFilhoDoFilho.appendChild(minhaDivFilhaDaFilha);
 document.querySelector("#primeiroFilhoDoFilho").firstElementChild.className = "divCriadaPelaMaria"
 document.querySelector(".divCriadaPelaMaria").parentNode.parentNode.nextElementSibling;
+
+// Terceira parte 
+let pai = document.querySelector("#pai");
+pai.removeChild(document.querySelector("#primeiroFilho"));
+pai.removeChild(document.querySelector("#terceiroFilho"));
+pai.removeChild(document.querySelector("#quartoEUltimoFilho"));
+
+let ondeVoceEsta = document.querySelector("#elementoOndeVoceEsta");
+ondeVoceEsta.removeChild(document.querySelector("#segundoEUltimoFilhoDoFilho"));
+
+let papai = document.querySelector("body")
+papai.removeChild(document.querySelector("#paiDoPai"))
+
 
 </script>
 </body>
