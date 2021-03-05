@@ -82,10 +82,13 @@
   addOParagraph.appendChild(createOParagraph);
 
   //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+  //12.Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
   let addDivLeft = document.querySelector(".main-content");
   let createDivLeft = document.createElement("div")
   createDivLeft.className = "left-content";
   addDivLeft.appendChild(createDivLeft);
+  let removeLeft = document.querySelectorAll(".main-content");
+   
 
   //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
   let addDivRight = document.querySelector(".main-content");
@@ -100,6 +103,7 @@
   createImg.className = "small-image";
   addImg.appendChild(createImg);
   //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6
+  //15Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
   let addUl = document.querySelector(".right-content");
   let createUl= document.createElement("ul")
   createUl.className = "list"
@@ -112,18 +116,34 @@
     createLi.innerText = nameNumber;
     listNumber.appendChild(createLi)
   }
+  
 
   //9.Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+  //11.Adicione a classe description nas 3 tags h3 criadas;
   let addH3um = document.querySelector(".main-content");
   let createH3um = document.createElement("h3");
+  createH3um.className = "description";
   addH3um.appendChild(createH3um);
+
   let addH3dois = document.querySelector(".main-content");
   let createH3dois = document.createElement("h3");
+  createH3dois.className = "description";
   addH3dois.appendChild(createH3dois);
+
   let addH3tres = document.querySelector(".main-content");
   let createH3tres = document.createElement("h3");
+  createH3tres.className = "description";
   addH3tres.appendChild(createH3tres);
   
+//10.Adicione a classe title na tag h1 criada;
+document.querySelector("h1").className = "title"
+
+document.querySelector(".main-content").removeChild(left-content);
+//13Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+document.querySelector(".right-content").style.margin. = "auto";
+//14Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+
+
     </script>
   </body>
 </html>
