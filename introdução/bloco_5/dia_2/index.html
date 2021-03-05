@@ -57,22 +57,29 @@
   </head>
   <body>
     <script>
-  // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+  //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
   let addH1 = document.querySelector("body");
   let createH1 = document.createElement("h1")
   createH1.innerText = " Exercício 5.2 - JavaScript DOM"; //adiciona o texto a tag H1
   addH1.appendChild(createH1);
-  //Adicione a tag div com a classe main-content como filho da tag body ;
+
+  //2.Adicione a tag div com a classe main-content como filho da tag body ;
   let addDiv = document.querySelector("body");
   let createDiv = document.createElement("div")
   createDiv.className = "main-content"
   addDiv.appendChild(createDiv)
-  //Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+
+  //3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
   let addDivaDiv = document.querySelector(".main-content");
   let createDivaDiv = document.createElement("div")
   createDivaDiv.className = "center-content"
   addDivaDiv.appendChild(createDivaDiv)
-  //Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+
+  //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+  let addOParagraph = document.querySelector(".center-content");
+  let createOParagraph = document.createElement("p")
+  createOParagraph.innerText= "O Dom é Maravilhoso - By Oliva"
+  addOParagraph.appendChild(createOParagraph)
   //Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
   //Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
   //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
