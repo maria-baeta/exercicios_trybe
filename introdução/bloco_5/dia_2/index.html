@@ -92,8 +92,31 @@
   let createDivRight = document.createElement("div")
   createDivRight.className = "right-content";
   addDivRight.appendChild(createDivRight);
-  //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
-  //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
+  //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+  //(terminar)
+  let addImg = document.querySelector(".left-content");
+  let createImg = document.createElement("img")
+  createImg.className = "small-image";
+  addImg.appendChild(createImg);
+  //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6
+  let addUl = document.querySelector(".right-content");
+  let createUl= document.createElement("ul")
+  createUl.className = "list"
+  addUl.appendChild(createUl);
+  const itemLista = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
+  console.log(itemLista)
+  
+  let listNumber = document.querySelector(".list")
+  for(index=0; index < itemLista.length; index += 1) {
+    let nameNumber = itemLista[index];
+    let createLi = document.createElement('li')
+    createLi.innerText = nameNumber;
+    listNumber.appendChild(createLi)
+
+   
+  }
+
   //Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     </script>
   </body>
