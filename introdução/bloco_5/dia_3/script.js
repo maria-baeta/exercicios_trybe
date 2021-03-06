@@ -40,11 +40,40 @@ function createDaysOfTheWeek() {
   }
 
  //Exercicio 2
-function createButtonHoliday (string){
-let buttonContainer = document.querySelector('.buttons-container')
-let newButtonHoliday = document.createElement('button')
+function createButtonHoliday (string) {
+let buttonContainer = document.querySelector('.buttons-container');
+let newButtonHoliday = document.createElement('button');
 newButtonHoliday.innerHTML  = string;
 newButtonHoliday.id = 'btn-holiday'
 buttonContainer.appendChild(newButtonHoliday);
 }
 createButtonHoliday('Feriados');
+
+//Exercicio 3
+function styleHoliday() {
+  let buttonHoliday = document.querySelector('#btn-holiday');
+  let dayHoliday = document.querySelectorAll('.holiday')
+  let bgColor = 'rgb(238,238,238)';
+  let newBgColor = 'white';
+
+  buttonHoliday.addEventListener('click', function() {
+    for (let index = 0; index < dayHoliday.length; index += 1) {
+      if (dayHoliday[index].style.backgroundColor === newBgColor) {
+        dayHoliday[index].style.backgroundColor = bgColor;
+      } else {
+        dayHoliday[index].style.backgroundColor = newBgColor;
+      }
+    }
+  })
+};
+styleHoliday();
+
+//Exercicio 4
+function createButtonFriday (string) {
+let buttonContainer = document.querySelector('.buttons-container');
+let newButtonFriday = document.createElement('button');
+newButtonFriday.innerHTML = string;
+newButtonFriday.id = 'btn-friday';
+buttonContainer.appendChild(newButtonFriday);
+}
+createButtonFriday('Sexta-feira');
