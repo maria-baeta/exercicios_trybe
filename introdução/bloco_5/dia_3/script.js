@@ -50,7 +50,7 @@ buttonContainer.appendChild(newButtonHoliday);
 createButtonHoliday('Feriados');
 
 //Exercicio 3
-function styleHoliday() {
+function styleDayHoliday() {
   let buttonHoliday = document.querySelector('#btn-holiday');
   let dayHoliday = document.querySelectorAll('.holiday')
   let bgColor = 'rgb(238,238,238)';
@@ -66,7 +66,7 @@ function styleHoliday() {
     }
   })
 };
-styleHoliday();
+styleDayHoliday();
 
 //Exercicio 4
 function createButtonFriday (string) {
@@ -77,3 +77,22 @@ newButtonFriday.id = 'btn-friday';
 buttonContainer.appendChild(newButtonFriday);
 }
 createButtonFriday('Sexta-feira');
+
+//Exercicio 5 
+function styleDayFriday() {
+  let buttonFriday = document.querySelector("#btn-friday");
+  let dayFriday = document.querySelectorAll('.friday')
+  let bgColor = 'rgb(238,238,238)';
+  let newBgColor = 'white';
+  
+  buttonFriday.addEventListener('click', function() {
+    for (index = 0; index < dayFriday.length; index += 1) {
+      if (dayFriday[index].style.backgroundColor === newBgColor) {
+        dayFriday[index].style.backgroundColor = bgColor;
+      } else {
+        dayFriday[index].style.backgroundColor = newBgColor;
+      }
+    }
+  })
+}
+styleDayFriday()
