@@ -137,3 +137,9 @@ function styleTask () {
 styleTask()
 
 //Exercicio 10
+function addColorDay (){
+  let recuperecolor =document.querySelector('.my-tasks div');
+  let recupereDay = document.querySelectorAll('.day');
+  let bgColor = 'rgb(119,119,119)';
+
+}
