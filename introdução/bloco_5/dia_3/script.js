@@ -96,3 +96,44 @@ function styleDayFriday() {
   })
 }
 styleDayFriday()
+
+//Exercicio 6
+function dayMouseOver () {
+  let days = document.querySelector("#days")
+
+}
+
+//Exercicio 7 
+function tasks (string) {
+  let recuperaClassTasks = document.querySelector('.my-tasks');
+  let createSpan = document.createElement('span');
+  createSpan.innerText = string;
+  recuperaClassTasks.appendChild(createSpan);
+}
+tasks('cozinhar')
+
+// Exercicio 8
+function cores (string) {
+  let recuperaClassTasks = document.querySelector('.my-tasks');
+  let createDivColor = document.createElement('div');
+  createDivColor.className = 'task'
+  createDivColor.style.backgroundColor = string
+  recuperaClassTasks.appendChild(createDivColor)
+}
+cores('green')
+
+// Exercicio 9
+function styleTask () {
+  let recuperaClassTask = document.querySelector('.task');
+  recuperaClassTask.addEventListener("click", function(){
+    if (recuperaClassTask.className === "task"){
+      recuperaClassTask.className = "task selected";
+    }
+    else {
+      recuperaClassTask.className = "task";
+    }
+  })
+}
+styleTask()
+
+//Exercicio 10
