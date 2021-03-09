@@ -1,0 +1,28 @@
+header {
+    margin: 20px;
+}
+
+main {
+    margin: 50px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+input {
+    font-size: 10px;
+}
+
+#settings {
+    padding-left: 4px;
+    padding-right: 1px;
+}
+
+p{
+    text-align: justify;
+}
+div{
+  margin-bottom: 15px;
+  display: inline-block;
+}
