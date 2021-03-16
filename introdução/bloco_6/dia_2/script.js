@@ -17,7 +17,7 @@ createOption();
 // Criar função para interromper o fluxo automatico utilizando o preventDefaut()
 document.querySelector('#submit').addEventListener('click', function(event) {
   event.preventDefault
-  const inputs = document.querySelectorAll('input');
+  const inputs = document.querySelectorAll('.inputs');
   const textArea = document.querySelector('#curriculum-vitae').value;
   const select = document.querySelectorAll('option')
   console.log(select.value)
@@ -27,15 +27,13 @@ document.querySelector('#submit').addEventListener('click', function(event) {
     const button = document.querySelector('#submit');
     // monte uma div com o consolidado dos dados inseridos
     const div = document.createElement('div');
-    div.className = 'div-input';
     div.innerHTML = returnInput;
     button.appendChild(div);
   }
 });
-
 // Criar uma funçao que limpe todos os campos preenchidos e a div
 document.querySelector('#clean').addEventListener('click', function(event) {
-  const inputs = document.querySelectorAll('input');
+  const inputs = document.querySelectorAll('.inputs');
   const textArea = document.querySelector('#curriculum-vitae');
   const div = document.querySelectorAll('div')
   for (let index = 0; index < inputs.length && index < div.length; index += 1){
@@ -46,3 +44,5 @@ document.querySelector('#clean').addEventListener('click', function(event) {
   }
 });
   
+//
+// document.getElementsByName('')

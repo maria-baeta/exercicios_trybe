@@ -43,3 +43,13 @@ label {
 button {
     margin-left: 100px;
 }
+
+fieldset {
+    padding-bottom: 30px;
+    padding-left: 30px ;
+    padding-top: 30px;
+}
+
+button {
+    margin-bottom: 50px;
+}
