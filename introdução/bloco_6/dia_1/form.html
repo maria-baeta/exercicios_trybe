@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo</title>
+</head>
+<body>
+  <header>
+      <h1>Cadstro do Currículo</h1>
+  </header>
+  <main>  
+    <form action="" method="GET">
+      <fieldset id="personal-data">
+      <legend>Dados pessoais</legend>
+      <label for="full-name">Nome completo
+          <input type="text" name="nome" id="full-name" placeholder="Informe seu nome completo" required maxlength="40">
+      </label>
+      <br>
+      <br>
+      <label for="email">E-mail
+        <input type="email" name="email" id="email" placeholder="Informe seu e-mail" required maxlength="50">
+      </label>
+      <br>
+      <br>
+      <label for="numbers-cpf">CPF
+        <input type="text" name="cpf" id="numbers-cpf" placeholder="Informe seu Cpf" required maxlength="11">
+      </label>
+      <br>
+      <br>
+      <label for="address">Endereço
+        <input type="text" name="endereço" id="address" placeholder="Informe seu Endereço" required maxlength="200">
+      </label>
+      <br>
+      <br>
+      <label for="city">Cidade
+        <input type="text" name="cidade" id="city" placeholder="Informe sua Cidades" required maxlength="28">
+      </label>
+      <br>
+      <br>
+      <label for="">Estado
+        <select name="" id="state" required>
+          
+        </select>
+      </label>
+      <br>
+      <br>
+      <label for="city">Residência
+        <br>
+        <input type="radio" name="residence" id="residence-type1" required> Casa
+        <input type="radio" name="residence" id="residence-type2" required> Apartamento
+      </label>
+      </fieldset>
+      <fieldset id="last-job">
+        <Legend>Ultimo Emprego</Legend>
+        <label for="curriculum-vitae"> Curriculum Vitae
+          <br>
+          <br>
+          <textarea name="" id="curriculum-vitae" cols="30" rows="10"></textarea maxlength='1000' required>
+        </label>
+        <br>
+        <br>
+        <label for="office">Último Cargo
+          <input type="text" name="" id="office" maxlength="40" required placeholder="Cargo">
+        </label>
+        <br>
+        <br>
+        <label for="job-description">Descrição do Cargo
+          <input type="text" name="" id="job-description" maxlength="500" required placeholder="Descrição">
+        </label>
+        <br>
+        <br>
+        <label for="start date">Data de Início 
+          <input type="date" name="" id="start date" required placeholder="Descrição">
+        </label>
+      </fieldset>
+    </form>
+    <section id="buttons">
+      <button type="submit" id="submit">Enviar</button>
+      <button type="submit" id="clean">Limpar</button>
+    </section>
+    
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>

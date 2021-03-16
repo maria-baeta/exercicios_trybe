@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(186, 223, 248);  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border: 0,5px solid white;
+    border-radius: 5px;
+    background-color: rgb(39, 104, 112);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+label {
+    font-size: 15px;
+}
+
+#personal-data {
+    background-color: rgb(229, 235, 241);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#last-job {
+    background-color: rgb(229, 235, 241);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    margin-left: 100px;
+}
