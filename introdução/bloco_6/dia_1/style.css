@@ -23,7 +23,23 @@ label {
 
 #personal-data {
     background-color: rgb(229, 235, 241);
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+#last-job {
+    background-color: rgb(229, 235, 241);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    margin-left: 100px;
 }

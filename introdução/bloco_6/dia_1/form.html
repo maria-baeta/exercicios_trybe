@@ -53,9 +53,36 @@
         <input type="radio" name="residence" id="residence-type2" required> Apartamento
       </label>
       </fieldset>
+      <fieldset id="last-job">
+        <Legend>Ultimo Emprego</Legend>
+        <label for="curriculum-vitae"> Curriculum Vitae
+          <br>
+          <br>
+          <textarea name="" id="curriculum-vitae" cols="30" rows="10"></textarea maxlength='1000' required>
+        </label>
+        <br>
+        <br>
+        <label for="office">Último Cargo
+          <input type="text" name="" id="office" maxlength="40" required placeholder="Cargo">
+        </label>
+        <br>
+        <br>
+        <label for="job-description">Descrição do Cargo
+          <input type="text" name="" id="job-description" maxlength="500" required placeholder="Descrição">
+        </label>
+        <br>
+        <br>
+        <label for="start date">Data de Início 
+          <input type="date" name="" id="start date" required placeholder="Descrição">
+        </label>
+      </fieldset>
     </form>
+    <section id="buttons">
+      <button type="submit" id="submit">Enviar</button>
+      <button type="submit" id="clean">Limpar</button>
+    </section>
+    
   </main>
-
     <script src="script.js"></script>
 </body>
 </html>
