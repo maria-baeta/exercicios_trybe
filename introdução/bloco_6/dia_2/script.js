@@ -14,20 +14,21 @@ function createOption() {
   }
 }
 createOption();
-// Criar função para interromper o fluxo automatico utilizando o preventDefaut()
 document.querySelector('#submit').addEventListener('click', function(event) {
   event.preventDefault
   const inputs = document.querySelectorAll('.inputs');
   const textArea = document.querySelector('#curriculum-vitae').value;
   const select = document.querySelectorAll('option')
-  console.log(select.value)
-
-    for (let index = 0; index < inputs.length; index += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     let returnInput = inputs[index].value;
-    const button = document.querySelector('#submit');
-    // monte uma div com o consolidado dos dados inseridos
     const div = document.createElement('div');
-    div.innerHTML = returnInput;
+    if((inputs[index].type === 'radio') && (inputs[index].checked)) {
+      div.innerHTML =(inputs[index].value);
+    } else if (inputs[index].type !== 'radio') {
+      div.innerHTML =(inputs[index].value);
+    }
+    const button = document.querySelector('#submit');
+    div.innerHTML = (returnInput); 
     button.appendChild(div);
   }
 });
@@ -43,6 +44,5 @@ document.querySelector('#clean').addEventListener('click', function(event) {
     div[index].innerText = '';
   }
 });
-  
-//
-// document.getElementsByName('')
+
+

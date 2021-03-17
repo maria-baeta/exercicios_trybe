@@ -20,6 +20,7 @@ document.querySelector('#submit').addEventListener('click', function(event) {
   const inputs = document.querySelectorAll('input');
   const textArea = document.querySelector('#curriculum-vitae').value;
   const select = document.querySelectorAll('option')
+  console.log(select.value)
 
     for (let index = 0; index < inputs.length; index += 1) {
     let returnInput = inputs[index].value;
