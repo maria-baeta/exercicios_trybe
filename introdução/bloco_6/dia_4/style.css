@@ -49,13 +49,6 @@ list-style: none;
 margin-right: 10px;
 }
 /*  */
-section {
-border: 1px solid black;
-}
-
-article {
-  border: 1px solid red
-}
 
 .main-container {
 display: flex;
