@@ -91,10 +91,13 @@ margin: 10px;
 }
 
 .aside-container {
-border: 1px solid orange;
-flex-basis: 350px;
+align-content: center;
 display: flex;
+flex-basis: 350px;
 flex-direction: column;
+/* Recorri ao gabarito para confirmar a resposta, esta com dúvida entre i grow e content */
+flex-grow: 1;
+justify-content: center;
 margin: 20px;
 }
 
