@@ -88,6 +88,7 @@ background-color: #5C687C;
 border: black solid 1px;
 display: flex;
 flex-basis: 16%;
+flex-grow: 1;
 height: 150px;
 justify-content: center;
 margin: 10px;
