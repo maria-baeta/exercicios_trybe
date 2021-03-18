@@ -66,6 +66,7 @@ flex-wrap: wrap;
 .movie-container {
 display: flex;
 flex-direction: column;
+flex-basis: 700px;
 }
 
 .movie-container h2 {
@@ -85,6 +86,7 @@ align-items: center;
 background-color: #5C687C;
 border: black solid 1px;
 display: flex;
+flex-basis: 16%;
 height: 150px;
 justify-content: center;
 margin: 10px;
