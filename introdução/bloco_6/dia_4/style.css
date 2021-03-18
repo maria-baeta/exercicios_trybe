@@ -10,6 +10,7 @@
   }
   
   .header-container {
+    
     background-color: #5C687C;
     display: flex;
     border: 1px solid palegoldenrod;
@@ -29,15 +30,19 @@
     display: flex;
     flex-basis: 500px;
     flex-grow: 1;
+    
  }
   
   .menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    
   }
   
   .menu-container li {
+    align-self:center;
+    border: 1px solid rgb(20, 20, 20);
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
