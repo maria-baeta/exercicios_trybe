@@ -5,10 +5,17 @@
 
 body {
   background-color:lavender;
-  margin: 20px;
-}
+ }
 
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px 0;
+  background-color: whitesmoke;
+}
 h1 {
+  border-radius: 5px;
   font-size:50px;
   margin: 20px;
 }
@@ -43,11 +50,10 @@ figure {
 
 @media screen and (max-width: 375px) {
   body {
-    margin: 10px;
     font-size: 15px;
   }
   h1 {
-    font-size:20px;
+    font-size:30px;
     margin: 10px;
   }
   img {
