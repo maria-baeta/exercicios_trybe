@@ -16,12 +16,21 @@ h2 {
 
 }
 
+.box-container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 30px;
+}
 img {
-    max-width: 100%;
+  border: 1px solid red;
+  margin-top: 30px;
+  max-width: 100%;
 }
 
 figure {
-    margin: 0;
+    margin: 15px;
+    border: 1px solid black;
 }
 
 @media screen and (max-width: 375px) {
@@ -31,5 +40,10 @@ figure {
   h1 {
     font-size:20px;
     margin: 10px;
+  }
+  img {
+    border: none;
+    margin-top: 30px;
+    max-width: 100%;
   }
 }
