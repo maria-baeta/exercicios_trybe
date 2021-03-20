@@ -4,7 +4,52 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-   
+
+  body{
+    background-color: cornflowerblue;
+    
+  } 
+
+  .header-container {
+    align-items: flex-end;
+    background-color:rgba(246, 250, 255, 0.685);
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .header-container p {
+    font-family:'Alice', serif;
+    font-size: 50px;
+    flex-basis: 80%;
+    margin: 20px;
+   }
+
+  .header-container nav {
+    flex-basis: 20%;
+  }
+
+  .header-container nav ul {
+      display: flex;
+  }
+  
+  .header-container nav ul li {
+    font-family:'Alice', serif;
+    list-style: none;
+    margin: 10px;
+  }
+  aside{
+    border: 1px solid red;
+  }
+  article{
+    border: 1px solid purple;
+  }
+  footer {
+    border: 1px solid greenyellow;
+  }
+
   @media screen and (max-width: 768px)  {
 
   }
