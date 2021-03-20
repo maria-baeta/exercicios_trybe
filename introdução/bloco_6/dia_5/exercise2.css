@@ -7,12 +7,12 @@ html {
 
   body{
     background-color: rgb(107, 201, 255);
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   } 
 
   .header-container {
     align-items: flex-end;
-    background-color:rgba(246, 250, 255, 0.685);
+    /* background-color:rgba(246, 250, 255, 0.685); */
     border-radius: 10px;
     color: white;
     display: flex;
@@ -45,12 +45,52 @@ html {
     list-style: none;
     margin-right: 10px;
   }
-  aside{
-    border: 1px solid red;
+
+  .main-container {
+    display: flex;
+    width: 100%;
+    justify-content: stretch; 
+    align-items:flex-start;
+    background-color: rgba(255, 255, 255, 0.74);
   }
-  article{
-    border: 1px solid purple;
+  
+  .main-container article {
+    margin: 15px;
+    order: 1;
+    flex-basis: 60%;
+    padding: 10px;
   }
+  h2{
+  font-family:'Alice', serif;
+  text-align: center;
+  margin: 10px;
+}
+
+.aside-container {
+display: flex;
+flex-direction: column;
+align-items: baseline ;
+}
+
+img {
+  margin-top: 1200px;
+  width: 200px;
+  height: 300px;
+}
+.main-container article h1 {
+  font-family:'Alice', serif;
+  text-align: center;
+}
+.main-container article p {
+  text-align: justify;
+}
+.main-container div {
+    flex-basis: 40%;
+    margin: 0px 10px;
+    order: 2;
+}
+
+
   footer {
     border: 1px solid greenyellow;
   }
@@ -66,7 +106,7 @@ html {
   
 }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 41px) {
     .header-container{
       flex-direction: column;
       align-items: center;
