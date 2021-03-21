@@ -59,41 +59,34 @@ aside {
 aside h2 {
   text-align: center;
 }
+
+footer {
+  background-color: white;
+}
+
 @media screen and (max-width: 600px) {
+
   .container {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
-
-  p {
-      padding: 0 5px;
-      line-height: 1.5em;
-    }
-  footer {
-    background-color: white;
+  .container header {
+    flex-basis: 100%;
+    width: 100%;
   }
-
   
-    /* TODO */
-  }
+}
   
   @media screen and (min-width: 600px) {
     
     .container {
+      flex-direction: column;
       flex-wrap: wrap;
     }
+    header nav ul {
+      justify-content: flex-start;
+    }
   
-    /* TODO */
   }
-  
-  /* @media screen and (min-width: 1000px) {
-    body {
-      background-color: lightgreen;
-    }
-  
-    .container {
-      flex-wrap: nowrap;
-    }
-  
-    /* TODO */
-  } */
