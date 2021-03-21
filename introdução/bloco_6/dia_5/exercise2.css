@@ -79,19 +79,21 @@ img {
   height: 300px;
   
 }
+
 .main-container article h1 {
   font-family:'Alice', serif;
   text-align: center;
 }
+
 .main-container article p {
   text-align: justify;
 }
+
 .main-container div {
     flex-basis: 40%;
     margin: 0px 10px;
     order: 2;
 }
-
 
   footer {
     padding: 30px;
@@ -103,13 +105,17 @@ img {
     margin-left: 20px;
     font-size: 15px;
   }
+
   @media screen and (max-width: 768px)  {
-    .header-container p {
+     .header-container p {
       font-size: 30px;
       margin: 20px;
       width: 80%;
     }
-
+    img {
+      margin-top: 2600px;
+     }
+    
   }
 
   @media screen and (max-width: 411px) {
