@@ -31,25 +31,35 @@ h1 {
 
 h2 {
   margin: 20px;
+  text-align: center;
 
 }
 
 .box-container {
    display: flex;
-   justify-content: center;
    flex-direction: column;
-   margin-top: 30px;
+   justify-content: center;
+    margin-top: 30px;
 }
+.figure {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figure {
+  margin: 5px;
+}
+figcaption {
+  text-align: center;
+}
+
 img {
-  border: 1px solid red;
   margin-top: 30px;
   max-width: 100%;
 }
 
-figure {
-    margin: 15px;
-    border: 1px solid black;
-}
+
 
 @media screen and (max-width: 375px) {
   
