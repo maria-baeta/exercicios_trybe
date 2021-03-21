@@ -74,8 +74,10 @@ align-items: baseline ;
 
 img {
   margin-top: 1200px;
+  margin-left: 100px;
   width: 200px;
   height: 300px;
+  
 }
 .main-container article h1 {
   font-family:'Alice', serif;
@@ -92,9 +94,15 @@ img {
 
 
   footer {
-    border: 1px solid greenyellow;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
   }
-
+  footer p {
+    margin-left: 20px;
+    font-size: 15px;
+  }
   @media screen and (max-width: 768px)  {
     .header-container p {
       font-size: 30px;
@@ -102,11 +110,9 @@ img {
       width: 80%;
     }
 
-  
-  
-}
+  }
 
-  @media screen and (max-width: 41px) {
+  @media screen and (max-width: 411px) {
     .header-container{
       flex-direction: column;
       align-items: center;
