@@ -99,3 +99,46 @@
         align-items: flex-start;
       }
   }
+
+  @media (max-width: 450px) {
+    body {
+        padding: 0px;
+    }
+
+    #header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 35px;
+      }
+
+    #aside {
+        display: none;
+    }
+
+    #content {
+        width: 90%;
+    }
+
+    #navigation {
+        margin-top: 75px;
+    }
+
+    #navigation ul li {
+        display: block;
+    }
+
+    #navigation ul li a {
+        float: none;
+    }
+    p {
+        text-align: left;
+    }
+
+    img {
+       
+        width: 350px;
+        max-width: 100%;
+    }
+    }
