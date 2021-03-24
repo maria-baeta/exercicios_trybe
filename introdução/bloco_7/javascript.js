@@ -71,3 +71,5 @@ const ordenaNum = () => {
   
   console.log(maiorPalavra('Antônio foi no banheiro e não sabemos o que aconteceu'))
 
+// exercício 4 
+//Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
