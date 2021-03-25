@@ -55,11 +55,14 @@ Object.assign(allLessons, {lesson1}, {lesson2}, {lesson3});
 console.log(allLessons);
 
 // 8. Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+const alunos = () => {
 const alunosLesson1 = allLessons.lesson1.numeroEstudantes;
 const alunosLesson2 = allLessons.lesson2.numeroEstudantes;
 const alunosLesson3 = allLessons.lesson3.numeroEstudantes;
 const alunosTotal = (alunosLesson1 + alunosLesson2 + alunosLesson3)
-console.log(`O numero total de alunos é  de ${alunosTotal}`)
+console.log(`O numero total de alunos é  de ${alunosTotal}.`)
+}
+alunos()
 
 // 9. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
 
@@ -78,3 +81,13 @@ const parKeyValue = (objeto, key, value) => {
   return resultado;
 }
 console.log(parKeyValue(lesson3, 'turno', 'tarde'))
+
+//BÔNUS 
+// 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+const alunosMat = () => {
+  const alunosLesson1 = allLessons.lesson1.numeroEstudantes;
+  const alunosLesson3 = allLessons.lesson3.numeroEstudantes;
+  const alunosTotal = (alunosLesson1 + alunosLesson3)
+  console.log(`O numero total de alunos que tem aulas de Matemática é ${alunosTotal}.`)
+  }
+  alunosMat()
