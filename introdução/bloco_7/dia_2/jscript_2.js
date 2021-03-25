@@ -61,8 +61,20 @@ const alunosLesson3 = allLessons.lesson3.numeroEstudantes;
 const alunosTotal = (alunosLesson1 + alunosLesson2 + alunosLesson3)
 console.log(`O numero total de alunos é  de ${alunosTotal}`)
 
-// 9. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+// 9. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
 
 const valueKey = (objeto , number) =>  Object.values(objeto)[number];
 console.log(valueKey(lesson1, 0))
 
+// 10 . Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. 
+const parKeyValue = (objeto, key, value) => { 
+  const keyValue = Object.entries(objeto);
+  let resultado = false;
+  for (let index in keyValue) {
+    if (keyValue[index][0] === key && keyValue[index][1] === value) {
+      resultado = true;
+    }
+  }
+  return resultado;
+}
+console.log(parKeyValue(lesson3, 'turno', 'tarde'))
