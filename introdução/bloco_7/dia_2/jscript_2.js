@@ -91,3 +91,30 @@ const alunosMat = () => {
   console.log(`O numero total de alunos que tem aulas de Matemática é ${alunosTotal}.`)
   }
   alunosMat()
+
+  // 2. Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
+  const relatorio = (objeto, professor) => { 
+    const materiaAplicada = [];
+    let tutor = [];
+    let totalEstudantes = 0;
+    const objetoRelatorio = Object.values(objeto);
+      for ( let index in objetoRelatorio) {
+      if (objetoRelatorio[index].professor === professor) {
+        tutor = (objetoRelatorio[index].professor);
+        materiaAplicada.push(objetoRelatorio[index].materia);
+        totalEstudantes += objetoRelatorio[index].numeroEstudantes;
+      }
+    }
+  return {professor: tutor, aulas: materiaAplicada, estudantes: totalEstudantes}
+  }
+
+  const criaRelatorio = (allLessons, professor) => {
+    const resultado = {};
+    relatorio.professor = professor;
+    Object.assign(resultado, relatorio(allLessons, professor) )
+    return resultado
+  }
+
+  console.log(criaRelatorio(allLessons, 'Maria Clara'))
+
