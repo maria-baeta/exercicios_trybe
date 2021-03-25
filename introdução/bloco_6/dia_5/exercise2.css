@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+p {
+  padding: 10px;
+}
+
+h1 h2 h3 {
+  font-family: 'Alice', serif;
+}
+
+.container {
+  display: flex;
+}
+
+.container header p {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+.container header ul{
+  display: flex;
+}
+
+.container header ul li {
+  list-style: none;
+  margin: 10px;
+  color: white;
+}
+
+aside { 
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.main-content {
+  border-radius: 15px;
+  
+}
+
+.main-content h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.main-content p {
+  margin: 10px;
+  text-align: justify;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container header {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  
+}
+  
+  @media screen and (min-width: 600px) {
+    
+    .container {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    header nav ul {
+      justify-content: flex-start;
+    }
+  
+  }
