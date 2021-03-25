@@ -59,5 +59,10 @@ const alunosLesson1 = allLessons.lesson1.numeroEstudantes;
 const alunosLesson2 = allLessons.lesson2.numeroEstudantes;
 const alunosLesson3 = allLessons.lesson3.numeroEstudantes;
 const alunosTotal = (alunosLesson1 + alunosLesson2 + alunosLesson3)
-
 console.log(`O numero total de alunos é  de ${alunosTotal}`)
+
+// 9. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+
+const valueKey = (objeto , number) =>  Object.values(objeto)[number];
+console.log(valueKey(lesson1, 0))
+
