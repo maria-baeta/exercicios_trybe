@@ -10,13 +10,8 @@ const wordLengths = (words) => {
   return myArray;
 }
 wordLengths(['sun', 'potato', 'roundabout', 'pizza'])
-
-
 const words = ['sun', 'potato', 'roundabout', 'pizza'];
-
-
 const expected = [3, 6, 10, 5];
-
 assert.strictEqual(typeof(wordLengths), 'function'); //ok
 const output = wordLengths(words);
 assert.deepStrictEqual(output, expected);
