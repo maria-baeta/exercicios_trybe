@@ -2,18 +2,21 @@
 // *Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
 const checkResposta = (gabarito, respostasAluno) => {
   let contador = 0;
-  for (let index = 0; index < gabarito.length && index < respostasAluno.length; index += 1) {
+  for (let index = 0; index < gabarito.length; index += 1) {
     if (gabarito[index] === respostasAluno[index]) {
       contador += 1;
-    }
-    if (respostasAluno[index] !== gabarito[index] && respostasAluno[index] !== 'N.A') {
+    } else if (respostasAluno[index] === 'N.A') {
+      contador += 0
+    } else {
       contador -= 0.5;
-    } 
+    }
   }
   console.log('Sua nota é:' + ' ' + contador)
-};
-checkResposta(["a", 'b'], ["a", 'N.A'])
+}
+
+
+checkResposta(["a", 'b'], ["a", 'c'])
 
 // const hof = ([gabarito], [respostasAluno], checkResposta) => {
 
-// };
+// // };
