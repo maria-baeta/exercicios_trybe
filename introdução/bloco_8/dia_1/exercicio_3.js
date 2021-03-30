@@ -3,4 +3,4 @@
 
 const checkResposta = (gabarito) =>  (respostaAluno) => (gabarito === respostaAluno);
     
-console.log(checkResposta('a')('b'));
+console.log(checkResposta('a')('a'));
