@@ -4,14 +4,10 @@
 const assert = require('assert');
 
 // escreva sum abaixo
-const numbers = [1,2,3,4]
 
-const sum = (number) => {
-    const [a] = number
-    const {...rest} = number
-   return a + rest
-}
-console.log(sum())
+const sum = ((...numbers) => numbers.reduce(((acc, curr) => acc + curr), 0) )  
+
+console.log(sum(1, 2, 3, 4))
 
 assert.strictEqual(sum(), 0);
 assert.strictEqual(sum(1), 1);
