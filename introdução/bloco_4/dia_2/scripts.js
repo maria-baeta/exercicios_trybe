@@ -33,10 +33,14 @@
  // for (let index = 0; index < groceryList.length; index++){
  //     console.log(groceryList[index])
 //}
+// let vetor = [5,3, 2, 4, 7, 1, 0, 6]
+// console.log(vetor)
+// for (i = 0; i < vetor; i++){
+//   let ordenacao = vetor[1];
+//   if (ordenacao.sort)
+// }
 
-let vetor = [5,3, 2, 4, 7, 1, 0, 6]
-console.log(vetor)
-for (i = 0; i < vetor; i++){
-  let ordenacao = vetor[1];
-  if (ordenacao.sort)
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+for(let nome of names){
+  console.log(nome);
 }
