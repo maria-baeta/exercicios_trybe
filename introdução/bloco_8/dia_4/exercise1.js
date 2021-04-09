@@ -14,7 +14,7 @@ const reduce = (acumulador, valorAtual) => acumulador.concat(valorAtual);
 //segundo gabarito Course
 const flatten = () => {
   // escreva seu código aqui
-  let newArray = arrays.reduce(reduce,[]);
+  let newArray = arrays.reduce(((acumulador, valorAtual) => acumulador.concat(valorAtual)),[]);
   return newArray;
 };
 console.log(flatten());
