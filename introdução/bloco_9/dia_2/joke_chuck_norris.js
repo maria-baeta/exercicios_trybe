@@ -1,0 +1,19 @@
+// const { rejects } = require("node:assert");
+const fetch = require('node-fetch');
+
+async function verifiedFetch(url) {
+  if (url === 'https://api.chucknorris.io/jokes/random?category=dev') {
+    return fetch(url)
+      .then((r) => r.json())
+      .then((r) => (r.value));
+  }
+  throw new Error('endpoint não existe');
+}
+
+async function sendJokeToFriend(name) {
+  const menssage = await verifiedFetch('https://api.chucknorris.io/jokes/random?category=dev')
+    .then((joke) => `Oi ${name}, ouve essa: ${joke}`)
+    .catch((error) => error);
+  console.log(menssage);
+}
+sendJokeToFriend('Maria')
