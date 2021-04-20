@@ -51,5 +51,6 @@ function encode(string) {
     return letter;
   }
 //   console.log(decode('M1r31 B12t1'));
+
 const functions = { encode, decode };
 module.exports = functions;
