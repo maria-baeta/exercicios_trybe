@@ -1,11 +1,10 @@
 {
-  "name": "dia_1",
+  "name": "bloco_10",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest--watch"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
