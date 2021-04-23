@@ -36,29 +36,29 @@ test('#somar', () => {
 });
 // 4. Divid 
 test('#multiplicar', () => {
-  math.dividir.mockImplementation((a, b) => a * b);
+  math.dividir.mockImplementation((a, b) => a / b);
   math.dividir = jest
   .fn()
   .mockReturnValueOnce(2) // retorna o valor definido apenas uma vez, podendo ser encadeado em sucessivas chamadas.
   // .mockReturnValueOnce(5) // define um valor padrão de retorno
   .mockReturnValue(15);
   
-  // math.dividir(6, 3);
-  // math.dividir(10, 2);
+  math.dividir(6, 3);
+  math.dividir(10, 2);
   math.dividir(30, 2);
 
   expect(math.dividir).toHaveBeenCalled();
   expect(math.dividir).toHaveBeenCalledTimes(1);
 
-  // // expect(math.dividir).toHaveBeenCalledTimes(1);
-  // expect(math.dividir).toHaveBeenCalledWith(6, 3);
-  // expect(math.dividir(6, 3)).toBe(2);
+  expect(math.dividir).toHaveBeenCalledTimes(1);
+  expect(math.dividir).toHaveBeenCalledWith(6, 3);
+  expect(math.dividir(6, 3)).toBe(2);
 
-  // // expect(math.dividir).toHaveBeenCalledTimes(2);
-  // expect(math.dividir).toHaveBeenCalledWith(10, 2);
-  // expect(math.dividir(10, 2)).toBe(5);
+  expect(math.dividir).toHaveBeenCalledTimes(2);
+  expect(math.dividir).toHaveBeenCalledWith(10, 2);
+  expect(math.dividir(10, 2)).toBe(5);
 
-  // expect(math.dividir).toHaveBeenCalledTimes(3);
+  expect(math.dividir).toHaveBeenCalledTimes(3);
   expect(math.dividir).toHaveBeenCalledWith(30, 2);
   expect(math.dividir(30, 2)).toBe(15);
 })
