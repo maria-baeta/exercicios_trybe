@@ -1,7 +1,9 @@
-const { dividir } = require('./math');
 const math = require('./math')
+
 // mocka todos os comandos:
+
 jest.mock('./math.js')
+
 // 1. Subtarir
 test('#subtrair', () => {
   math.subtrair.mockImplementation((a, b) => a - b);
