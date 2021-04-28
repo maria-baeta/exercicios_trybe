@@ -1,0 +1,12 @@
+.button {
+margin: 10px;
+}
+
+.pokedex {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 80px;
+    text-align: center;
+    width: 200px;
+}
