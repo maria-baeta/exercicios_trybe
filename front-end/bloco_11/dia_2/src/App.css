@@ -1,0 +1,26 @@
+.App {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px;
+  padding: 20px;
+  width: 80%;
+}
+
+section {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+section h1 {
+  color: yellow;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+}
