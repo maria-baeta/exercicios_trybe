@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução Redux</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+</head>
+
+<body>
+  <div>
+    Clicked: <span id="value">0</span> times
+    <button id="increment" type="button">+</button>
+    <button id="decrement" type="button">-</button>
+    <button id="increment-10" type="button">Adiciona 10</button>
+  </div>
+  <!-- // Formato da action
+  // {
+  //   type: 'ADD_TASK',
+  //   payload: {
+  //     text: 'Dar aula de Redux'
+  //   }
+  // } -->
+  <script>
+    // 2º Criação do Reducer, o state recebe qualquer valor e de qualquer tipo, string, number, array e object
+    function counterReducer(state = 0, action) {
+      switch (action.type) {
+        case 'INCREMENT':
+          // não fazer NUNCA state = state + 1
+        return state + action.payload.amount;
+        case 'DECREMENT':
+        return state - 1;
+        default:
+          break;
+      }
+    }
+      //  1º Configurando a Store
+    // const store = Redux.createStore(reducer)
+    const store = Redux.createStore(counterReducer)
+
+    // 3 adiciona o disparo das actions no click do botão 
+    const btnIncrement = document.getElementById('increment')
+    const btnDecrement = document.getElementById('decrement')
+    const btnIncrement10 = document.getElementById('increment-10')
+
+    // addEventLint 
+    btnIncrement.addEventListener('click', () => {
+      const incrementAction = {
+        type: 'INCREMENT',
+        payload: {
+          amount: 1,
+        }
+      }
+      store.dispatch(incrementAction);
+    })
+
+    btnIncrement10.addEventListener('click', () => {
+      const increment10 = {
+        type: 'INCREMENT',
+        payload: {
+          amount: 10,
+        }
+      }
+      store.dispatch(increment10)
+    })
+
+    btnDecrement.addEventListener('click', () => {
+      const decrement = {
+        type: 'DECREMENT',
+      }
+      store.dispatch(decrement);
+    })
+
+    // 4º pede os dados e atualiza a pagina 
+    store.subscribe(() => {
+      document.getElementById('value').innerHTML = store.getState()
+    })
+  </script>
+</body>
+
+</html>
